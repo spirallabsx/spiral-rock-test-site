@@ -154,6 +154,22 @@ p {
 
 /* CUSTOM CSS - EMR 2/22 */
 
+.home-bottom {
+  border: 1px solid grey;
+}
+
+.home-bottom {
+  padding-top: 20px;
+}
+
+.home-bottom img {
+  margin-left: 30px;
+}
+
+.home-bottom a {
+  margin-right: 30px;
+}
+
 .full-height-anthem {
   height: 100%;
   background-color: var(--white);
