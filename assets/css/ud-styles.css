@@ -20,13 +20,10 @@
   --black: #212121;
 }
 
-html, body {
+body {
   height: 100%;
 }
-.full-height {
-  height: 100%;
-  background-color: var(--primary-color);
-}
+
 
 
 body {
@@ -154,6 +151,18 @@ p {
 
 /* CUSTOM CSS - EMR 2/22 */
 
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-flex a {
+  margin-right: auto;
+}
+
 .home-bottom {
   border: 1px solid grey;
 }
@@ -168,6 +177,12 @@ p {
 
 .home-bottom a {
   margin-right: 30px;
+}
+
+.full-height-home {
+  width: 100vw;
+  min-height: 100vh;
+  background-color:var(--primary-color);
 }
 
 .full-height-anthem {
@@ -353,12 +368,18 @@ color:rgb(225, 225, 225);
   background: var(--primary-color);
 }
 
+#mintbutton {
+  margin-right: 0;
+  margin-left: auto;
+}
+
 .mint-btn {
   font-size: 13px;
   color: var(--white);
   background-color: var(--black);
   padding: 5px 15px;
   letter-spacing: 0.2rem;
+ 
 }
 .mint-btn:hover {
   color:var(--black);
@@ -518,7 +539,7 @@ color:rgb(225, 225, 225);
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav {
-    padding: 20px 30px;
+    padding: 0 30px;
   }
 }
 
@@ -724,18 +745,25 @@ color:rgb(225, 225, 225);
   flex:1;
   background-color: var(--black);
   color:var(--white);
-  margin-left: 50px;
-  margin-right: 100px;
+  margin-right: auto;
   border-radius: 5px;
   
 }
 .anthem-home {
   flex:1;
   background-color: var(--white);
-  margin-left: 100px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: 0;
   border-radius: 5px;
 }
+
+@media only screen and (min-width: 729px) and (max-width: 1330px) {
+  .mayhem-home {
+    margin-right: 30px;
+  }
+}
+
+
 .mayhem-home h4 {
   color: var(--white);
 }
@@ -757,21 +785,27 @@ color:rgb(225, 225, 225);
 }
 
 
+
+
+
 .home-bottom {
-  height: 10vh;
+  height: 100px;
   display:flex;
   justify-content: flex-start;
- min-width: 100px;
+ min-width: 380px;
+ max-width: 600px;
+ margin-bottom: 30px;
 }
-
 
 
 .home-footer {
   width:100%;
   display:flex;
+  flex-wrap: wrap;
   position: fixed;
   bottom: 0;
   margin-bottom: 50px;
+  padding: 0 50px;
 }
 
 
