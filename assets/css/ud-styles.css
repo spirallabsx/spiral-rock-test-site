@@ -10,9 +10,11 @@
 /*===========================
   COMMON css 
 ===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --font: "Inter", sans-serif;
+  --font: "Roboto Mono", monospace;
   --body-color: #637381;
   --heading-color: #212b36;
   --primary-color: #d7dbe1;
@@ -282,8 +284,8 @@ color:rgb(225, 225, 225);
 }
 
 .about h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto', monospace;
+  font-weight: 900;
 }
 .about p {
   font-family: 'Roboto Mono', sans-serif;
